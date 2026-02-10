@@ -10,48 +10,64 @@
 git clone https://github.com/we-b/claude-code-lesson.git ~/claude-code-lesson
 ```
 
-### 2. クローンしたフォルダでClaude Codeを起動
+### 2. 各章のフォルダをVSCodeで開く
+
+章ごとに専用のフォルダが用意されています。学習する章のフォルダをVSCodeで開いてください。
 
 ```bash
-cd ~/claude-code-lesson
-claude
+# Chapter 2を学習する場合
+code ~/claude-code-lesson/lesson2/chapter2
+
+# Chapter 3を学習する場合
+code ~/claude-code-lesson/lesson2/chapter3
+
+# Chapter 4を学習する場合
+code ~/claude-code-lesson/lesson2/chapter4
 ```
+
+### 3. Claude Codeを起動
+
+VSCodeでフォルダを開いた状態で、Claude Codeを起動します。
 
 ## フォルダ構成
 
 ```
-sample-files/
-├── documents/          # ドキュメント類
-│   ├── 議事録_20260115.md
-│   ├── 報告書_2025Q1.txt
-│   └── 提案書_草案.txt
-├── spreadsheets/       # 表計算データ
-│   └── 予算管理.csv
-├── images/             # 画像ファイル（空）
-├── templates/          # テンプレート
-│   └── 週報テンプレート.md
-└── projects/           # プロジェクト別フォルダ
-    ├── project-a/
-    │   └── 進捗.md
-    ├── project-b/
-    │   └── 進捗.md
-    └── project-c/
-        └── 進捗.md
+claude-code-lesson/
+├── README.md
+└── lesson2/
+    ├── chapter2/           ← ファイル操作の基本
+    │   ├── documents/
+    │   │   ├── 議事録_20260115.md
+    │   │   ├── 報告書_2025Q1.txt
+    │   │   └── 提案書_草案.txt
+    │   ├── spreadsheets/
+    │   │   └── 予算管理.csv
+    │   └── images/
+    │
+    ├── chapter3/           ← 基本操作を組み合わせて実践
+    │   ├── templates/
+    │   │   └── 週報テンプレート.md
+    │   └── projects/
+    │       ├── project-a/
+    │       │   └── 進捗.md
+    │       ├── project-b/
+    │       │   └── 進捗.md
+    │       └── project-c/
+    │           └── 進捗.md
+    │
+    └── chapter4/           ← オフィスファイルを操作
+        └── README.md       （この章ではファイルを新規作成します）
 ```
 
-## 各Lessonで使用するファイル
+## 各章の内容
 
 ### Lesson 2: ローカルファイル操作エージェント
 
-#### Chapter 2: ファイル操作の基本
-- `sample-files/` フォルダ全体を使ってGlob、Read、Write、Edit、Bashを学習
-
-#### Chapter 3: 基本操作を組み合わせて実践
-- `templates/週報テンプレート.md` - テンプレートから資料を自動生成
-- `projects/*/進捗.md` - 複数フォルダから情報を収集してレポート作成
-
-#### Chapter 4: オフィスファイルを操作
-- Word/Excelファイルの読み書き練習（Chapter内で新規作成）
+| 章 | タイトル | 学習内容 |
+|:---|:---|:---|
+| Chapter 2 | ファイル操作の基本 | Glob、Read、Write、Edit、Bashの基本操作 |
+| Chapter 3 | 基本操作を組み合わせて実践 | テンプレートから資料生成、複数フォルダから情報収集 |
+| Chapter 4 | オフィスファイルを操作 | Word/Excelの読み書き、データ連携 |
 
 ## ライセンス
 
