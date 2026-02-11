@@ -1,0 +1,15 @@
+{
+  "version": "1.0.0",
+  "lastUpdated": "2025-12-31",
+  "settings": {
+    "theme": "default",
+    "language": "ja",
+    "notifications": true,
+    "autoSave": true,
+    "backupInterval": 24
+  },
+  "user": {
+    "name": "管理者",
+    "email": "admin@example.com"
+  }
+}
